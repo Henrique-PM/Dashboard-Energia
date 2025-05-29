@@ -1,0 +1,63 @@
+<div class="min-h-screen bg-gray-900 text-white py-12 px-8">
+  
+   <header class="mb-12 text-center">
+    <h1 class="text-5xl font-bold text-teal-400">Dashboard de Geração de Energia</h1>
+    <p class="text-gray-400 mt-4 text-lg max-w-4xl mx-auto">Análise em tempo real da geração de energia por diferentes fontes e estados. Visualize os dados de maneira clara e intuitiva.</p>
+  </header>
+
+  <!-- Cards de Métricas -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <p class="text-sm text-gray-400">Total de Usinas</p>
+      <h2 class="text-2xl font-semibold text-teal-400">-</h2>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <p class="text-sm text-gray-400">Estados Monitorados</p>
+      <h2 class="text-2xl font-semibold text-teal-400">-</h2>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <p class="text-sm text-gray-400">Geração Total</p>
+      <h2 class="text-2xl font-semibold text-teal-400">--- MW</h2>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <p class="text-sm text-gray-400">Última Atualização</p>
+      <h2 class="text-2xl font-semibold text-teal-400">--/04/2025</h2>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="space-y-12">
+    <!-- Gráficos -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-semibold text-teal-400 mb-6">Geração por Estado</h2>
+      <canvas id="grafico" class="w-full h-72"></canvas>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-teal-400 mb-6">Distribuição por Tipo de Usina</h2>
+        <canvas id="graficoUsina" class="w-full h-72"></canvas>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-teal-400 mb-6">Distribuição por Combustível</h2>
+        <canvas id="graficoCombustivel" class="w-full h-72"></canvas>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-semibold text-teal-400 mb-6">Geração ao Longo do Tempo</h2>
+      <canvas id="graficoTempo" class="w-full h-72"></canvas>
+    </div>
+
+    <!-- AG Grid -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <h3 class="text-2xl font-semibold text-teal-400 mb-6">Tabela de Dados</h3>
+      <div class="ag-theme-alpine rounded-lg" id="meuGrid" style="height: 500px; width: 100%; border-radius: 12px;"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 text-center text-gray-500">
+    <p>&copy; 2025 Geração de Energia. Todos os direitos reservados.</p>
+  </footer>
+</div>

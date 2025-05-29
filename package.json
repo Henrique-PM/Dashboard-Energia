@@ -1,0 +1,34 @@
+{
+  "name": "dashboard-interativo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:init": "tailwindcss init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrique-PM/Dashboard-Interativo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henrique-PM/Dashboard-Interativo/issues"
+  },
+  "homepage": "https://github.com/Henrique-PM/Dashboard-Interativo#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.5",
+    "ag-grid-community": "^33.2.4",
+    "chart.js": "^4.4.9",
+    "csv-parser": "^3.2.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "fs": "^0.0.1-security",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.5"
+  }
+}
